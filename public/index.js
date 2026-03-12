@@ -52,5 +52,6 @@ extra.appendChild(audio);
 card.appendChild(content);
 card.appendChild(extra);
 
-sects.appendChild(card);
+pare.appendChild(card);
+
 
