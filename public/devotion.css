@@ -1,0 +1,33 @@
+body{
+background:#f4f6f9;
+}
+
+.topbar{
+border-radius:0 !important;
+}
+
+.hero{
+padding:60px 0;
+background:white;
+}
+
+.devotion-highlight{
+margin-top:40px;
+}
+
+.verse{
+font-style:italic;
+background:#f1f1f1;
+padding:15px;
+border-left:4px solid #2185d0;
+}
+
+.devotion-section{
+margin-top:50px;
+margin-bottom:60px;
+}
+
+.footer{
+margin-top:80px;
+padding:30px;
+}

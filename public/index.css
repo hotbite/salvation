@@ -1,0 +1,27 @@
+body{
+background:#f8f9fb;
+}
+
+.topbar{
+border-radius:0 !important;
+}
+
+.hero{
+padding:60px 0;
+background:#ffffff;
+}
+
+.sermon-section{
+margin-top:40px;
+margin-bottom:60px;
+}
+
+audio{
+width:100%;
+margin-top:10px;
+}
+
+.footer{
+padding:30px;
+margin-top:60px;
+}
