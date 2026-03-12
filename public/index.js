@@ -1,3 +1,10 @@
+fetch("https://soundsalvation.onrender.com/api/sermons")
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(sermon => {
+    
+    
+
 // 1. Get the container
 const container = document.getElementById("sermon-list");
 
@@ -12,17 +19,17 @@ content.className = "content";
 // Header
 const header = document.createElement("div");
 header.className = "header";
-header.textContent = "Walking by Faith";
+header.textContent = "sermon.title";
 
 // Meta
 const meta = document.createElement("div");
 meta.className = "meta";
-meta.textContent = "Apostle Ian Walya";
+meta.textContent = "sermon.preacher";
 
 // Description
 const description = document.createElement("div");
 description.className = "description";
-description.textContent = "first sermone";
+description.textContent = "sermon.date";
 
 // Append header, meta, description to content
 content.appendChild(header);
@@ -39,7 +46,7 @@ audio.controls = true;
 
 // Create source element
 const source = document.createElement("source");
-source.src = "https://res.cloudinary.com/dlwsprvsd/video/upload/v1773319942/podcast2_jpsdqu.mp3";
+source.src = sermon.url;
 source.type = "audio/mpeg";
 
 // Append source to audio
@@ -54,3 +61,5 @@ card.appendChild(extra);
 
 // Append card to container
 container.appendChild(card);
+})
+  })
