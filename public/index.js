@@ -1,5 +1,5 @@
-var pare = document.getElementById("sects");
-
+// 1. Get the container
+const container = document.getElementById("sermon-list");
 
 // 2. Create card div
 const card = document.createElement("div");
@@ -52,6 +52,5 @@ extra.appendChild(audio);
 card.appendChild(content);
 card.appendChild(extra);
 
-pare.appendChild(card);
-
-
+// Append card to container
+container.appendChild(card);
